@@ -76,7 +76,7 @@ export default function Team() {
         <div className="relative w-full h-[50vh] md:h-[70vh] overflow-hidden">
           {/* Main Image */}
           <img
-            src="/team photos/photo.jpeg"
+            src="photo.jpeg"
             alt="The Team"
             className="w-full  object-cover grayscale transition-all duration-1000 ease-out group-hover:grayscale-0 group-hover:scale-110"
           />
