@@ -9,7 +9,7 @@ const teamMembers = [
   {
     name: "Vishvam Patel",
     role: "CEO & Founder",
-    img: "vishvam.jpeg",
+    img: "Vishvam.jpeg",
     desc: "Guardian of quality. Breaking things now so they never break for your users.",
     color: "from-purple-500",
   }, {
@@ -28,14 +28,14 @@ const teamMembers = [
   {
     name: "Heeya Dadhalwala",
     role: "Project Lead & Experience Designer",
-    img: "heeya.jpeg",
+    img: "Heeya.jpeg",
     desc: "Crafting sensory digital journeys that bridge the gap between human and machine.",
     color: "from-cyan-500",
   },
   {
     name: "Harsh Vataliya",
     role: "team lead & principal engineer",
-    img: "harsh.jpeg",
+    img: "Harsh.jpeg",
     desc: "Architecting high-fidelity, responsive interfaces where performance meets aesthetics.",
     color: "from-blue-500",
   },
