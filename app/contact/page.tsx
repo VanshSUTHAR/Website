@@ -51,25 +51,28 @@ export default function Contact() {
             {/* Departmental Data Points */}
             <div className="grid grid-cols-1 gap-4">
               {[
-                { label: "New Partnerships", email: "biz@timepass.dev", icon: <Globe /> },
-                { label: "Technical Support", email: "ops@timepass.dev", icon: <Laptop /> },
-                { label: "Press & Media", email: "media@timepass.dev", icon: <MessageSquare /> },
-                { label: "Privacy / DPO", email: "legal@timepass.dev", icon: <ShieldCheck /> },
-              ].map((dept, i) => (
-                <div key={i} className="group p-5 rounded-3xl bg-blue-950/10 border border-white/5 hover:border-blue-500/20 transition-all flex items-center justify-between">
-                  <div className="flex items-center gap-4">
-                    <div className="text-blue-500 bg-blue-500/10 p-2 rounded-xl group-hover:scale-110 transition-transform">
-                      const Icon = dept.icon;
-                      <Icon size={18} />
+                { label: "New Partnerships", email: "biz@timepass.dev", icon: Globe },
+                { label: "Technical Support", email: "ops@timepass.dev", icon: Laptop },
+                { label: "Press & Media", email: "media@timepass.dev", icon: MessageSquare },
+                { label: "Privacy / DPO", email: "legal@timepass.dev", icon: ShieldCheck },
+              ].map((dept, i) => {
+                const Icon = dept.icon;
+
+                return (
+                  <div key={i} className="group p-5 rounded-3xl bg-blue-950/10 border border-white/5 hover:border-blue-500/20 transition-all flex items-center justify-between">
+                    <div className="flex items-center gap-4">
+                      <div className="text-blue-500 bg-blue-500/10 p-2 rounded-xl group-hover:scale-110 transition-transform">
+                        <Icon size={18} />
+                      </div>
+                      <div>
+                        <p className="text-[10px] font-black uppercase tracking-widest text-slate-500">{dept.label}</p>
+                        <p className="text-sm font-bold text-slate-200">{dept.email}</p>
+                      </div>
                     </div>
-                    <div>
-                      <p className="text-[10px] font-black uppercase tracking-widest text-slate-500">{dept.label}</p>
-                      <p className="text-sm font-bold text-slate-200">{dept.email}</p>
-                    </div>
+                    <Send className="w-4 h-4 text-slate-700 group-hover:text-blue-500 transition-colors" />
                   </div>
-                  <Send className="w-4 h-4 text-slate-700 group-hover:text-blue-500 transition-colors" />
-                </div>
-              ))}
+                );
+              })}
             </div>
 
             {/* Global Node Data */}
